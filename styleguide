@@ -1,0 +1,23 @@
+### Style Guide for Salmon Cookies
+
+
+
+### Colors
+
+- Colors should be clean and use whitespace(#FFF) perferentially to other colors.
+
+Primary Color: #FF9999 Salmon Pink
+Secondary Color: #85C6FC Light Blue
+Alt Contrast Color: #FC7316
+
+## Fonts
+
+Headlines and large text:Josefin Sans 400, 600, 700 |	Alt: San Serif
+Content and general: Indie Flower |	Alt: Ubuntu, San Serif.
+
+		<link href='https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans:400,700,600' rel='stylesheet' type='text/css'>
+
+## Imagery
+
+When possible imagery will invoke strong associations with the Pacific North West.
+		
