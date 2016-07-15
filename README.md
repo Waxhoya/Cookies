@@ -1,1 +1,1 @@
-### AquaCulture Cooki business calulator
+### AquaCulture Cookie business calculator
