@@ -1,10 +1,11 @@
-
+// Returns a random number between min and max
 function randInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function cookieStand(name, minCst, maxCst, avgPer) {
-	this.name = name:
+// Creates cookieStand objs to represent sales/store information
+function cookieStand(storeName, minCst, maxCst, avgPer) {
+	this.storeName = storeName;
 	this.minCst = minCst;
 	this.maxCst = maxCst;
 	this.avgPer = avgPer;
@@ -18,7 +19,7 @@ function cookieStand(name, minCst, maxCst, avgPer) {
 	}
 }
 
-//
+// Stores will be pushed here to be added the the table iteration
 var storeArray = [];
 
 //Populating array with known stores
