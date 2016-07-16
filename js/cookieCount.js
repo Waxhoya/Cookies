@@ -9,13 +9,13 @@ function cookieStand(storeName, minCst, maxCst, avgPer) {
 	this.minCst = minCst;
 	this.maxCst = maxCst;
 	this.avgPer = avgPer;
-	var this.lastProfit = "";
-	this.getCustomers: function() {
-		lastProfit = randInt(minCst, maxCst);
-		return lastProfit;
+	this.hourlyCustomer = 0;
+	this.getCustomers = function() {
+		hourlyCustomer = randInt(minCst, maxCst);
+		return hourlyCustomer;
 	}
-	this.getSales: function() {
-		return Math.floor(lastProfit*this.avgPer);
+	this.getSales = function() {
+		return Math.floor(hourlyCustomer*this.avgPer);
 	}
 }
 
