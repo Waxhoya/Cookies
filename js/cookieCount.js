@@ -1,21 +1,22 @@
-//Taken from MDN
+
 function randInt(min, max) {
 	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-function cookieStand(minCst, maxCst, avgPer, ) {
+function cookieStand(minCst, maxCst, avgPer) {
 	this.minCst = minCst;
 	this.maxCst = maxCst;
 	this.avgPer = avgPer;
 	var lastProfit = "";
 	function getCustomers() {
 		lastProfit = randInt(minCst, maxCst);
-		return lastSold
+		return lastProfit;
 	}
 	function getSales() {
-		return lastSold*this.avgPer
+		return Math.floor(lastProfit*this.avgPer);
 	}
 }
+
 
 var storeArray = [];
 
