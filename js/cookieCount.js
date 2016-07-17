@@ -25,7 +25,7 @@ cookieStand.prototype.getSales = function() {
 var storeArray = [];
 
 //Populating array with known stores
-var pioneerSquare = new cookieStand("Pioneer Square" 17, 88, 5.2);
+var pioneerSquare = new cookieStand("Pioneer Square", 17, 88, 5.2);
 storeArray.push('pioneerSquare');
 var portlandAirport = new cookieStand("Portland Airport", 6, 24, 1.2);
 storeArray.push('portlandAirport');
@@ -39,14 +39,17 @@ storeArray.push('pearlDistrict');
 // iterate through all of the available cookieStand
 function howIsDay() {
 	for (var currentStore = 0; currentStore < storeArray.length; currentStore++) {
-		var dayTotal, dailyList
+		var dayTotal, dailyList;
 		dayTotal = 0;
-		dailyList = "<ul>"
+		dailyList = "<ul>";
+		console.log("loop 1"+dayTotal+" "+dailyList)
 		for (hours = 0; hours > 7; hours++) {
-			var hourlyOut = currentStore.getSales();
+			console.log("loop 2"+dayTotal+" "+dailyList)
+			var hourlyOut = storeArray[currentStore].getSales();
 			dayTotal += hourlyOut;
 			dailyList += "<li>"+ hourlyOut +"</li>";
 		}
-		dailyList += "<li class='dayTotal'> Total: "+dayTotal+"</li></ul>"
+		dailyList += "<li class='dayTotal'> Total: "+dayTotal+"</li></ul>";
+		document.body.innerHTML = dailyList;
 	}
 }
