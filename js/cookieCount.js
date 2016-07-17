@@ -33,5 +33,20 @@ var washingtonSquare = new cookieStand("Washington Square", 11, 38, 1.9);
 storeArray.push('washingtonSquare');
 var sellwood = new cookieStand("Sellwood", 20, 48, 3.3);
 storeArray.push('sellwood');
-var pearlDistric = new cookieStand("Pearl District", 3, 24, 2.6);
-storeArray.push('pearlDistric');
+var pearlDistrict = new cookieStand("Pearl District", 3, 24, 2.6);
+storeArray.push('pearlDistrict');
+
+// iterate through all of the available cookieStand
+function howIsDay() {
+	for (var currentStore = 0; currentStore < storeArray.length; currentStore++) {
+		var dayTotal, dailyList
+		dayTotal = 0;
+		dailyList = "<ul>"
+		for (hours = 0; hours > 7; hours++) {
+			var hourlyOut = currentStore.getSales();
+			dayTotal += hourlyOut;
+			dailyList += "<li>"+ hourlyOut +"</li>";
+		}
+		dailyList += "<li class='dayTotal'> Total: "+dayTotal+"</li></ul>"
+	}
+}
