@@ -10,13 +10,15 @@ function cookieStand(storeName, minCst, maxCst, avgPer) {
 	this.maxCst = maxCst;
 	this.avgPer = avgPer;
 	this.hourlyCustomer = 0;
-	this.getCustomers = function() {
-		hourlyCustomer = randInt(minCst, maxCst);
-		return hourlyCustomer;
-	}
-	this.getSales = function() {
-		return Math.floor(hourlyCustomer*this.avgPer);
-	}
+}
+
+cookieStand.prototype.getCustomers = function() {
+	hourlyCustomer = randInt(minCst, maxCst);
+	return hourlyCustomer;
+}
+
+cookieStand.prototype.getSales = function() {
+	return Math.floor(hourlyCustomer*this.avgPer);
 }
 
 // Stores will be pushed here to be added the the table iteration
