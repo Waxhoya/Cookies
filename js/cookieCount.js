@@ -1,6 +1,6 @@
 // takes index int and returns hour strings
 function whatTime(index) {
-	if (index > 12) {return index+":00"}
+	if (index < 12) {return index+":00"}
 	else { return (index-12)+":00"}
 }
 
@@ -60,7 +60,7 @@ function howIsDay(arrayOfStores) {
 		}
 
 		document.write("<tr><td>DAILY TOTAL</td><td>TOTAL COOKIES</td><td>TOTAL CUSTOMERS</td></tr>");
-		document.write("<tr><td>TOTALS:</td><td>"+dailyCookies+"</td><td>"+dailyCust+"</td></tr>");
+		document.write("<tr><td>"+dailyCust+"</td><td>"+dailyCookies+"</td><td>Daily Totals</td></tr></table><br>");
 
 	}
 
