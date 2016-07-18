@@ -49,19 +49,17 @@ function howIsDay(arrayOfStores) {
 		dailyCookies =0;
 		dailyCust =0;
 
-		document.write("<table><tr><th scope='col'>Customers</th><th scope='col'>Cookies Sold</th><th scope='col'>Time Sold</th></tr>");
+		document.write("<h3>"+arrayOfStores[currentStore].storeName+"</sh3><table><tr><br><th scope='col'>Sales Hour</th><th scope='col'>Cookies Sold</th><th scope='col'>Customers</th></tr>");
 
-		for (var hours = 0; hours < 7; hours++) {
+		for (var hours = 10; hours < 18; hours++) {
 			howHour = arrayOfStores[currentStore].getCustomers()
 			qtyCookie = arrayOfStores[currentStore].getSales()
-			document.write("<tr><td>"+howHour+"</td><td>"+qtyCookie+"</td><td>"+whatTime(hours)+ "</td></tr>");
+			document.write("<tr><td>"+whatTime(hours)+"</td><td>"+qtyCookie+"</td><td>"+howHour+"</td></tr>");
 			dailyCust += howHour;
 			dailyCookies += qtyCookie;
 		}
 
-		document.write("<tr><td>DAILY TOTAL</td><td>TOTAL COOKIES</td><td>TOTAL CUSTOMERS</td></tr>");
-		document.write("<tr><td>"+dailyCust+"</td><td>"+dailyCookies+"</td><td>Daily Totals</td></tr></table><br>");
-
+		document.write("<tr><td>TOTALS</td><td>"+dailyCookies+"</td><td>"+dailyCust+"</td></tr></table><br>");
 	}
 
 }
