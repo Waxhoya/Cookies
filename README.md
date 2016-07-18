@@ -17,17 +17,17 @@ This project uses a random number generator to calculate cookie sales and displa
 
 #### cookieStand(storeName, minCst, maxCst, avgPer)
 
-	This object constructor creates cookieStand objects with the supplied inputs. After creation the objects must be added to storeArray[] with:
+This object constructor creates cookieStand objects with the supplied inputs. After creation the objects must be added to storeArray[] with:
 
 		* storeArray.push(<NEW OBJECT NAME>);
 
-	cookieStand Has 2 prototype methods that must run in order to work properly.
+cookieStand Has 2 prototype methods that must run in order to work properly.
 
 		* cookieStand.prototype.getCustomers creates a random customer count based on obj data
 		* cookieStand.prototype.getSales calculates the number of total cookies stored based on the last .getCustomers
 
 #### storeArray
 
-	This array contains all of the pre-created objects and any added afterwords.
+This array contains all of the pre-created objects and any added afterwords.
 
 	storeArray[index].methods is the intended method of access to the randomly generated store data.

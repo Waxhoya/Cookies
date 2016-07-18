@@ -45,7 +45,7 @@ storeArray.push(pearlDistrict);
 // iterate through all of the available cookieStand
 function howIsDay(arrayOfStores) {
 	for (var currentStore = 0; currentStore < arrayOfStores.length; currentStore++) {
-		var howHour, dailyCookies, dailyCust; //howHour, track each hour,  dailyCookies tracks total a day
+		var howHour, dailyCookies, dailyCust; //howHour track each hour,  dailyCookies tracks total a day
 		dailyCookies =0;
 		dailyCust =0;
 
@@ -54,12 +54,13 @@ function howIsDay(arrayOfStores) {
 		for (var hours = 0; hours < 7; hours++) {
 			howHour = arrayOfStores[currentStore].getCustomers()
 			qtyCookie = arrayOfStores[currentStore].getSales()
-			document.write("<tr><td>"+howHour+"</td><td>"+qtyCookie+"</td><td>" +whatTime(hours)+ "</td></tr>")
+			document.write("<tr><td>"+howHour+"</td><td>"+qtyCookie+"</td><td>"+whatTime(hours)+ "</td></tr>");
 			dailyCust += howHour;
 			dailyCookies += qtyCookie;
 		}
+
 		document.write("<tr><td>DAILY TOTAL</td><td>TOTAL COOKIES</td><td>TOTAL CUSTOMERS</td></tr>");
-		document.write("<tr><td>"+dailyCust"</td><td>"+dailyCookies+"</td><td>"+dailyCookies+"</td></tr>");
+		document.write("<tr><td>TOTALS:</td><td>"+dailyCookies+"</td><td>"+dailyCust+"</td></tr>");
 
 	}
 
