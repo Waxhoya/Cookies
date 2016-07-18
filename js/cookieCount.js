@@ -49,7 +49,7 @@ function howIsDay(arrayOfStores) {
 		dailyCookies =0;
 		dailyCust =0;
 
-		document.write("<h3>"+arrayOfStores[currentStore].storeName+"</sh3><table><tr><br><th scope='col'>Sales Hour</th><th scope='col'>Cookies Sold</th><th scope='col'>Customers</th></tr>");
+		document.write("<h3>"+arrayOfStores[currentStore].storeName+"</sh3><table><tr><br><th scope='col'>Time</th><th scope='col'>Cookies</th><th scope='col'>Customers</th></tr>");
 
 		for (var hours = 10; hours < 18; hours++) {
 			howHour = arrayOfStores[currentStore].getCustomers()
@@ -59,7 +59,7 @@ function howIsDay(arrayOfStores) {
 			dailyCookies += qtyCookie;
 		}
 
-		document.write("<tr><td>TOTALS</td><td>"+dailyCookies+"</td><td>"+dailyCust+"</td></tr></table><br>");
+		document.write("<tr><td>Day Total</td><td>"+dailyCookies+"</td><td>"+dailyCust+"</td></tr></table><br>");
 	}
-
+	document.write("<button onclick='howIsDay(storeArray)'>Run The Daily Report</button>");
 }
