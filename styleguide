@@ -1,22 +1,16 @@
 ### Style Guide for Salmon Cookies
 
-
+Clean and simple site. KISS design principles.
 
 ### Colors
 
-- Colors should be clean and use whitespace(#FFF) perferentially to other colors.
-
+Background Color: #85C6FC River Blue
+Contrast Color: #FC7316 Sashimi Orange
 Primary Color: #FF9999 Salmon Pink
-Secondary Color: #85C6FC River Blue
-Alt Contrast Color: #FC7316 Sashimi Orange
 
 ## Fonts
 
-Headlines and large text:Josefin Sans 400, 600, 700 |	Alt: San Serif
-Content and general: Indie Flower |	Alt: Ubuntu, San Serif.
+Headline and brand font: Permenent Marker
+Brand message and general communication: Amatic SC 700
 
-		<link href='https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans:400,700,600' rel='stylesheet' type='text/css'>
-
-## Imagery
-
-When possible imagery will invoke strong associations with the Pacific North West.
+	<link href='https://fonts.googleapis.com/css?family=Amatic+SC:700|Permanent+Marker' rel='stylesheet' type='text/css'>
