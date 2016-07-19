@@ -32,15 +32,11 @@ var storeArray = [];
 
 //Populating array with known stores
 var pioneerSquare = new cookieStand("Pioneer Square", 17, 88, 5.2);
-storeArray.push(pioneerSquare);
 var portlandAirport = new cookieStand("Portland Airport", 6, 24, 1.2);
-storeArray.push(portlandAirport);
 var washingtonSquare = new cookieStand("Washington Square", 11, 38, 1.9);
-storeArray.push(washingtonSquare);
 var sellwood = new cookieStand("Sellwood", 20, 48, 3.3);
-storeArray.push(sellwood);
 var pearlDistrict = new cookieStand("Pearl District", 3, 24, 2.6);
-storeArray.push(pearlDistrict);
+storeArray.push(pioneerSquare, portlandAirport, washingtonSquare, sellwood, pearlDistrict);
 
 // iterate through all of the available cookieStand
 function howIsDay(arrayOfStores) {
