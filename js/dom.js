@@ -23,9 +23,9 @@ function dayTable(arrayOfStores) {
 			howHour = arrayOfStores[currentStore].getCustomers();
 			qtyCookie = arrayOfStores[currentStore].getSales();
 			console.log(arrayOfStores[currentStore].storeName+": "+whatTime(hours)+" "+howHour+" "+qtyCookie)
-			cell1.appendChild = whatTime(hours);
-			cell2.appendChild = qtyCookie;
-			cell3.appendChild = howHour;
+			cell1.innerText = whatTime(hours);
+			cell2.innerText = qtyCookie;
+			cell3.innerText = howHour;
 			dailyCust += howHour;
 			dailyCookies += qtyCookie;
 		}
