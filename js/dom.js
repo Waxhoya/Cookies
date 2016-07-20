@@ -6,10 +6,8 @@ function dayTable(arrayOfStores) {
 		var howHour, dailyCookies, dailyCust; //howHour track each hour,  dailyCookies tracks total a day
 		dailyCookies =0;
 		dailyCust =0;
-		howHour=0;
 
-
-		for (var hours = 9; hours < 18; hours++) {
+		for (var hours = 10; hours < 18; hours++) {
 			var table = document.getElementById("cookieDOM");
 			var newTable = document.createElement("TABLE");
 
@@ -20,18 +18,15 @@ function dayTable(arrayOfStores) {
 
 			howHour = arrayOfStores[currentStore].getCustomers();
 			qtyCookie = arrayOfStores[currentStore].getSales();
-			console.log(arrayOfStores[currentStore].storeName+": "+whatTime(hours)+" "+howHour+" "+qtyCookie)
+
 			cell1.innerText = arrayOfStores[currentStore].storeName+" at "+whatTime(hours);
 			cell2.innerText = qtyCookie+" Cookies";
 			cell3.innerText = howHour+" Customers";
+
 			dailyCust += howHour;
 			dailyCookies += qtyCookie;
-		}
-		if (hours == 9) {
-			cell1.innerText = "Time";
-			cell2.innerText = "qtyCookie";
-			cell3.innerText = "howHour";
 
+			console.log(arrayOfStores[currentStore].storeName+": "+whatTime(hours)+" "+howHour+" "+qtyCookie)
 		}
 
 	}

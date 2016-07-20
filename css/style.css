@@ -10,14 +10,10 @@ p {
 	margin: auto;
 	padding: 20px;
 	word-spacing: 6px;
-
 }
 
 .image{
     position: relative;
-}
-strong{
-	color: #FC7316;
 }
 
 .image h1{
@@ -45,6 +41,19 @@ strong{
 	bottom:0;
 	left:0;
 	align-items: center;
+}
+
+strong{
+	color: #FC7316;
+}
+
+table {
+display: inline-block;
+}
+
+form {
+	vertical-align: top;
+	margin: 0px;
 }
 
 .greenText{
