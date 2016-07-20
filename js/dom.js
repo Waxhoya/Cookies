@@ -8,26 +8,30 @@ function dayTable(arrayOfStores) {
 		dailyCust =0;
 		howHour=0;
 
-		var newTable = document.createElement("TABLE");
-		var table = document.getElementById("cookieDOM");
-		var newRow = table.insertRow(currentStore);
-		var cell1 = newRow.insertCell(0);
-		var cell2 = newRow.insertCell(1);
-		var cell3 = newRow.insertCell(2);
 
-		cell1.innerText = "Time";
-		cell2.innerText = "Cookies";
-		cell3.innerText = "Customers";
+		for (var hours = 9; hours < 18; hours++) {
+			var table = document.getElementById("cookieDOM");
+			var newTable = document.createElement("TABLE");
 
-		for (var hours = 10; hours < 18; hours++) {
+			var newRow = table.insertRow(currentStore);
+			var cell1 = newRow.insertCell(0);
+			var cell2 = newRow.insertCell(1);
+			var cell3 = newRow.insertCell(2);
+
 			howHour = arrayOfStores[currentStore].getCustomers();
 			qtyCookie = arrayOfStores[currentStore].getSales();
 			console.log(arrayOfStores[currentStore].storeName+": "+whatTime(hours)+" "+howHour+" "+qtyCookie)
-			cell1.innerText = whatTime(hours);
-			cell2.innerText = qtyCookie;
-			cell3.innerText = howHour;
+			cell1.innerText = arrayOfStores[currentStore].storeName+" at "+whatTime(hours);
+			cell2.innerText = qtyCookie+" Cookies";
+			cell3.innerText = howHour+" Customers";
 			dailyCust += howHour;
 			dailyCookies += qtyCookie;
+		}
+		if (hours == 9) {
+			cell1.innerText = "Time";
+			cell2.innerText = "qtyCookie";
+			cell3.innerText = "howHour";
+
 		}
 
 	}

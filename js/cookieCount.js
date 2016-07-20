@@ -1,7 +1,7 @@
 // takes index int and returns hour strings
 function whatTime(index) {
-	if (index < 12) {return index+":00"}
-	else { return (index-12)+":00"}
+	if (index < 13) {return index+":00"}
+	else { return (index-12)+":00 PM "}
 }
 
 // Returns a random number between min and max
