@@ -10,7 +10,7 @@ function randInt(min, max) {
 }
 
 // Creates cookieStand objs to represent sales/store information
-function cookieStand(storeName, minCst, maxCst, avgPer) {
+function CookieStand(storeName, minCst, maxCst, avgPer) {
 	this.storeName = storeName;
 	this.minCst = minCst;
 	this.maxCst = maxCst;
@@ -18,12 +18,12 @@ function cookieStand(storeName, minCst, maxCst, avgPer) {
 	this.hourlyCustomer = 0;
 }
 
-cookieStand.prototype.getCustomers = function() {
+CookieStand.prototype.getCustomers = function() {
 	hourlyCustomer = randInt(this.minCst, this.maxCst);
 	return hourlyCustomer;
 }
 
-cookieStand.prototype.getSales = function() {
+CookieStand.prototype.getSales = function() {
 	return Math.floor(hourlyCustomer*this.avgPer);
 }
 
@@ -31,11 +31,11 @@ cookieStand.prototype.getSales = function() {
 var storeArray = [];
 
 //Populating array with known stores
-var pioneerSquare = new cookieStand("Pioneer Square", 17, 88, 5.2);
-var portlandAirport = new cookieStand("Portland Airport", 6, 24, 1.2);
-var washingtonSquare = new cookieStand("Washington Square", 11, 38, 1.9);
-var sellwood = new cookieStand("Sellwood", 20, 48, 3.3);
-var pearlDistrict = new cookieStand("Pearl District", 3, 24, 2.6);
+var pioneerSquare = new CookieStand("Pioneer Square", 17, 88, 5.2);
+var portlandAirport = new CookieStand("Portland Airport", 6, 24, 1.2);
+var washingtonSquare = new CookieStand("Washington Square", 11, 38, 1.9);
+var sellwood = new CookieStand("Sellwood", 20, 48, 3.3);
+var pearlDistrict = new CookieStand("Pearl District", 3, 24, 2.6);
 storeArray.push(pioneerSquare, portlandAirport, washingtonSquare, sellwood, pearlDistrict);
 
 // iterate through all of the available cookieStand
