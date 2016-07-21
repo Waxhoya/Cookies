@@ -51,10 +51,7 @@ table {
 display: inline-block;
 }
 
-form {
-	vertical-align: top;
-	margin: 0px;
-}
+
 
 .greenText{
 	color: green;
