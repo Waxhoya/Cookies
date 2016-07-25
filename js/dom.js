@@ -2,7 +2,7 @@ function dayTable(arrayOfStores) {
 	// var newTable = document.createElement("TABLE");
 
 	for (var currentStore = 0; currentStore < arrayOfStores.length; currentStore++) {
-		var table = document.getElementById("cookieDOM");
+		var table = document.getElementById("store"+currentStore);
 
 		var howHour, dailyCookies, dailyCust; //howHour track each hour,  dailyCookies tracks total a day
 		dailyCookies =0;

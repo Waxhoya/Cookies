@@ -2,8 +2,13 @@ strong{
 	color: #FC7316;
 }
 
+
 table {
 	display: inline-block;
+}
+
+div .tables{
+	
 }
 
 body {
@@ -63,4 +68,9 @@ p {
 }
 .yellowText{
 	color: yellow;
+}
+
+table {
+	font-size: .8em;
+	border: black solid 1px;
 }

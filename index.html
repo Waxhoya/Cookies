@@ -6,20 +6,19 @@
 </head>
 <body>
 
-
-  <div class="image">
+  <div class="image" id="headerPic">  <!--Header-->
     <h1>Salmon's Cookies</h1>
     <img src="pic/salmon.png" alt="Salmons Cookies" />
-  </div>
+		<button onclick="howIsDay(storeArray)">Run The Daily Report</button>
+		<button onclick="dayTable(storeArray)">Run DOM daily</button>
+		<button onclick="getStoreDay(storeArray)">IMPROVED DOM</button>
+	</div>
 	<br>
-	<br>
-	<button onclick="howIsDay(storeArray)">Run The Daily Report</button>
-	<button onclick="dayTable(storeArray)">Run DOM daily</button>
 
-	<form>
+	<form> <!--Form Info-->
 		<h4>
 			 Add a new store
-		</>
+		<h4/>
 		<p>
 			Store Name:
 			<input type="text" name="newStoreName" placeholder="Store Name" />
@@ -36,31 +35,62 @@
 		</table>
 	</div>
 
-	<div>
-		<p>
+	<div> <!--Brand Story-->
+		<p><!--PDX Original-->
 			Based out of Portland Oregon, Salmon's has been making cookies since the early 2016. <strong>We here at Salmon's feel the putting our customers and our ingredients first makes the most sense</strong>. When Steve "KING" Salmon started this company he never imagined that it would grow in to the sprawling empire it is now. Customers return in troves over several different seasons.
 		</p>
 
-		<p>
-			Summer is our most popular season and this year we are happy to be presenting several new flavors and product types. Our <strong>Organic</strong> product line is proudly featuring several new fruits including
+		<p> <!--Fruit Flavors-->
+			Summer is our most popular season and this year we are happy to be presenting several new flavors and product types. Our <strong>Organic</strong> product line is proudly featuring several new fruits v
 			 <span class="yellowText">Golden Apple</span>,
-				 <span class ="greenText">Water</span><span class ="redText">melon</span>,
-				 <span class ="blueText">Blueberry</span>,
-				 <span class ="redText">Strawberry</span>,
-				 <span class ="greenText">Kiwi</span>,
-				 <span class ="yellowText">Banana</span>,
-				 <span class ="redText">Wild Cherry</span>,
-				 <span class ="blueText">Grape</span>,
-				 and many others. Not only are these cookies extremely delicious but they help save the planet.
+			 <span class ="greenText">Water</span><span class ="redText">melon</span>,
+			 <span class ="blueText">Blueberry</span>,
+			 <span class ="redText">Strawberry</span>,
+			 <span class ="greenText">Kiwi</span>,
+			 <span class ="yellowText">Banana</span>,
+			 <span class ="redText">Wild Cherry</span>,
+			 <span class ="blueText">Grape</span>,
+			 and many others. Not only are these cookies extremely delicious but they help save the planet.
 		</p>
 
-		<p>
+		<p><!--Enviro Steward-->
 			You may very resonably be asking yourself just exactly how do these cookies save the planet? <strong>Good Question!</strong> Our first priority is to make sure our cookies are not only delicious and healthy for our customers but also for our planet. Each of the ingredients is reviewed by our team of highly trained badges to sniff out potential source of pollution. Each of our vendors is randomly audited and required to keep a detailed log of everything they sell to us. <strong>You can trust us when we say we are thorough and stand behind our products</strong>.
 		</p>
 	</div>
 
-	<script src="js/cookieCount.js"></script>
-	<script src="js/dom.js"></script>
+	<script src="js/CookieStore.js"></script> <!-- Class06 -->
+	<script src="js/dom.js"></script> <!-- Class07 -->
+	<script src="js/cookieCount.js"></script> <!-- Class08 -->
+	<script src="js/objCookie.js"></script>
 
-</body><span class ="redText">
+	<div id="cookieTable" class="tables"><!-- Cookie Loading -->
+
+		<table id="store1">
+			<thead><h3><script>"storeArray[0]"</script></h3></thead>
+		</table>
+		<table id="store2">
+			<thead><h3><script>"storeArray[1].name"</script></h3></thead>
+		</table>
+		<table id="store3">
+			<thead><h3><script>"storeArray[2].name"</script></h3></thead>
+		</table>
+		<table id="store4">
+			<thead><h3><script>"storeArray[3].name"</script></h3></thead>
+		</table>
+		<table id="store5">
+			<thead><h3><script>"storeArray[4].name"</script></h3></thead>
+		</table>
+		<table id="store6">
+			<thead><h3><script>"storeArray[5].name"</script></h3></thead>
+		</table>
+		<table id="store7">
+			<thead><h3><script>"storeArray[6].name"</script></h3></thead>
+		</table>
+
+
+	</div>
+
+
+
+</body>
 </html>

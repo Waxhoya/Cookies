@@ -10,7 +10,18 @@ Primary Color: #FF9999 Salmon Pink
 
 ## Fonts
 
-Headline and brand font: Permenent Marker
-Brand message and general communication: Amatic SC 700
+##### Headline/Brand image
+* font: Permenent Marker
+* Font size 3em
+
+
+##### Brand message and general communication:
+* font: Amatic SC 700
+* font size 1.5 em
+*	word-spacing: 6px
+
+
+
+##### CDN for forts
 
 	<link href='https://fonts.googleapis.com/css?family=Amatic+SC:700|Permanent+Marker' rel='stylesheet' type='text/css'>
